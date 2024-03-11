@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.logo{
+    text-decoration: none;
+}
+.name{
+    position: relative;
+    top: -12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px 3px;
+   background: coral;
+   position: fixed;
+   top: 0;
+   overflow: hidden;
+   width: 100%;
+}
+nav img{
+    width: 40px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 0px 5px;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+	
+}
+.nav-links ul li ::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: green;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li :hover::after{
+     width: 100%;
+}
+div.parallax {
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("../images/bgreg.jpg");
+	background-attachment: fixed;
+	height: 370px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+div.parallax_head {
+	color: #fff;
+	text-align: center;
+	height: 370px;
+	padding: 10px;
+}
+div.parallax_head h2 {
+	margin-top: 150px;
+	font-family: lucida handwriting;
+	text-transform: capitalize;
+	font-size: 35px;
+    text-align: center;
+    color: white;
+}
+div.parallax_head h3 {
+	font-size: 40px;
+	font-family: sans-serif;
+	font-weight: 200;
+    text-align: center;
+    color: white;
+}
+/*style for Home page*/
+div.index-bg {
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("../images/sea-sky-beach-restaurant.jpg");
+	background-attachment: fixed;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+div .index-bg_head {
+	color: #fff;
+	text-align: center;
+	height: 100vh;
+	padding: 10px;
+}
+div.index-bg_head h2 {
+	font-family: lucida handwriting;
+	text-transform: capitalize;
+	font-size: 35px;
+    text-align: center;
+    color: white;
+	margin-top: 250px;
+}
+div.index-bg_head h3 {
+	font-size: 40px;
+	font-family: sans-serif;
+	font-weight: 200;
+    text-align: center;
+    color: white;
+}
+a.btn-reserve {
+	display: block;
+	text-align: center;
+	max-width: 250px;
+	background: rgb(245, 74, 12);
+	color: #fff;
+	margin: 50px auto;
+	padding: 7px;
+	height: 40px;
+	border: 1px solid rgb(245, 74, 12);
+	font-family: verdana;
+	font-size: 18px;
+	margin-top: 25px;
+	border-radius: 4px;
+	text-decoration: none;
+}
+a.btn-reserve :hover {
+	letter-spacing: 2px;
+}
+/*About*/
+.about{
+	width: 100%;
+	height: 50vh;
+	padding: 10px 0;
+}
+.about .about_main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about .about_main .image img{
+	width: 300px;
+	height: 200px;
+	position: relative;
+	top: 5px;
+	margin-right: 150px;
+}
+.about_text{
+	margin-left: 50px;
+}
+.about .about_main .about_text h1, h3{
+	text-align: center;
+}
+.about .about_main .about_text h1 span{
+    color: #fac031;
+	margin-right: 15px;
+	font-family: mv boli;
+}
+.about .about_main .about_text h1{
+   font-size: 50px;
+   position: relative;
+   top: 10px;
+}
+.about .about_main .about_text h3{
+	font-size: 30px;
+	margin: 0 0 30px 0;
+}
+.about .about_main .about_text p {
+	width: 650px;
+	text-align: justify;
+	margin-right: 30px;
+	line-height: 22px;
+}
+
+/*style for Reservation page*/
+
+div.content {
+	background: #fff;
+	color: #000;
+	padding: 20px 15px;
+	height: auto;
+	display: block;
+}
+div.inner_content {
+	max-width: 1200px;
+	height: auto;
+	padding: 20px;
+	margin: 0 auto;
+}
+form.hr_book_form {
+	max-width: 1100px;
+	height: auto;
+	margin: 0 auto;
+}
+h2.form_head {
+	text-align: center;
+	color: black;
+	font-size: 30px;
+}
+p.form_slg {
+	text-align: center;
+	color: rgb(245, 74, 12);
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+div.left {
+	float: left;
+	width: 50%;
+	height: auto;
+	padding: 20px;
+}
+label {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: black;
+	font-size: 18px;
+}
+
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=time] {
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	padding: 7px;
+	height: 40px;
+	background: #efefef;
+	border-radius: 4px;
+}
+
+textarea {
+	width: 100%;
+	background: #efefef;
+	border: 1px solid #ccc;
+	padding: 7px;
+	border-radius: 4px;
+	height: 280px;
+}
+input[type=submit].submit {
+	width: 100%;
+	background: rgb(245, 74, 12);
+	color: #fff;
+	padding: 7px;
+	height: 40px;
+	border: 1px solid rgb(245, 74, 12);
+	font-family: verdana;
+	font-size: 19px;
+	margin-top: 27px;
+	border-radius: 4px;
+}
+.submit:hover {
+	background: #000;
+	border: 1px solid black;
+}
+.clear {
+	clear: both;
+	line-height: 0;
+}
+div.contact {
+	max-width: 600px;
+	margin: 0 auto;
+	height: auto;
+	color: #333;
+}
+
+div.contact div.left h3 {
+	color: rgb(245, 74, 12);
+	font-weight: 600;
+	margin-bottom: 4px;
+    margin-right: 170px;
+}
+
+div.contact div.left p {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.icon_holder {
+	text-align: center;
+	margin-top: 10px;
+}
+div.footer_parallax {
+	background-image: url("../images/dish_3.jpg");
+	background-attachment: fixed;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+
+div.on_footer_parallax {
+	background: #000;
+	opacity: 0.7;
+	color: #fff;
+	text-align: center;
+	height: 60px;
+	padding: 10px;
+	text-align: center;
+}
+div.on_footer_parallax  p{
+	line-height: 40px;
+}
+
+div.on_footer_parallax  p span{
+	color: rgb(245, 74, 12);
+}
+/*style for contact page*/
+.location{
+	width: 80%;
+	margin: auto;
+	padding: 50px 100px 0;
+}
+.location iframe{
+	width: 100%;
+}
+.contact-us{
+width: 80%;
+margin: auto;
+padding: 50px 100px;
+}
+.contact-col{
+	flex-basis: 48%;
+	margin-bottom: 30px;
+	float: left;
+	width: 50%;
+	height: auto;
+	padding: 20px;
+	
+}
+.contact-col div{
+	display: flex;
+	align-items: center;
+	padding: 10px;	
+}
+.contact-col div .bi{
+	font-size: 28px;
+	color: rgb(245, 74, 12);
+	margin: 10px;
+	margin-right: 30px;
+}
+.contact-col div p{
+	padding: 0;
+}
+.contact-col div h5{
+	font-size: 20px;
+}
+.contact-col input, .contact-colo textarea{
+	width: 100%; ;
+	padding: 15px;
+	margin-bottom: 17px;
+	outline: none;
+	border: 1 solid black;
+}
+.brown-btn{
+	background: rgb(245, 74, 12);
+	color: #fff;
+	padding: 7px;
+	height: 40px;
+	border: 1px solid rgb(245, 74, 12);
+	margin-top: 18px;
+	width: 100%;
+	font-size: 18px;
+}
+/*style for Menu page*/
+.menu{
+	width: 100%;
+	padding: 50px 0;
+}
+.menu .menu_box{
+	width: 95%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 15px;
+}
+.menu .menu_box .menu_card{
+	width: 325px;
+	height: 350px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
+}
+.menu .menu_box .menu_card .menu_image{
+	width: 300px;
+	height: 245px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.menu .menu_box .menu_card .menu_image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: 0.3s;
+}
+.menu .menu_box .menu_card .menu_image:hover img{
+	transform: scale(1.1);
+}
+.menu .menu_box .menu_card .menu_info h2{
+	width: 60%;
+	text-align: center;
+	margin: 10px auto 10px auto;
+	font-size: 25px;
+	color: #fac031;
+}
+.menu .menu_box .menu_card .menu_info h3{
+	text-align: center;
+	margin-top: 10px;
+}
+a:link {
+	text-decoration: none;
+  }
+
+/*style for Table*/
+#List{
+	text-align: center;
+	color: black;
+	font-size: 35px;
+}
+#t_list {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  #t_list td, #customers th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+  }
+  
+  #t_list tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #t_list tr:hover {background-color: #ddd;}
+  
+  #t_list th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: rgb(255, 106, 51);
+	color: white;
+	text-align: center;
+  }
+
+/*style for Review page*/
+#review{
+	text-align: center;
+	font-size: 40px;
+	color: rgb(247, 83, 24);
+	margin-top: 100px;
+}
